@@ -19,6 +19,6 @@ const config: Config = {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 };
 export default config;
