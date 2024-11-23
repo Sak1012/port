@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 export default function Home() {
   return (
-    <main className="min-h-screen w-full flex-col items-center justify-between">
+    <main className="w-full flex-col items-center justify-between">
       <section className="min-h-screen bg-grey w-full flex flex-col justify-between">
         <section className="w-full   flex flex-row  justify-center font-mono  lg:flex">
           <p className="text-black text-7xl lg:text-[225px] font-helvetica font-medium lg:leading-[185px] p-10">
@@ -23,7 +23,7 @@ export default function Home() {
           </p>
         </section>
       </section>
-      <section className="flex flex-col justify-between bg-grey w-full min-h-screen">
+      <section className="flex flex-col justify-between bg-grey w-full h-screen">
         <p className="font-helvetica font-medium text-[85px] leading-[80px] p-10">
           {" "}
           KNOW MORE ABOUT ME
@@ -64,13 +64,15 @@ export default function Home() {
         <section className="flex flex-row justify-between w-full">
           <p className="text-lg font-helvetica font-medium pl-5 text-yellow">
             {" "}
-            <span>↖︎ </span>
             SRIVATSAV AUSWIN
           </p>
-          <p className="text-lg font-helvetica font-semibold text-yellow">
+          <Link
+            href="/blog"
+            className="text-lg font-helvetica font-semibold text-yellow"
+          >
             {" "}
-            ####
-          </p>
+            ####<span className="text-sm font-thin"> ↗︎ </span>
+          </Link>
           <p className="text-5xl font-helvetica font-medium pr-5 text-yellow">
             ***
           </p>
