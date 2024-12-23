@@ -76,9 +76,18 @@ export default function Home() {
 					>
 						####<span className="text-xs sm:text-sm font-thin"> ↗︎ </span>
 					</Link>
-					<p className="text-2xl sm:text-5xl font-helvetica font-medium text-yellow">
-						***
-					</p>
+					<a
+						href="mailto:auswinsrivatsav@gmail.com"
+						className="text-sm sm:text-lg font-helvetica font-medium text-yellow"
+					>
+						CONTACT
+					</a>
+					<Link
+						href="https://buymeacoffee.com/sak1012"
+						className="text-sm sm:text-lg font-helvetica font-medium text-yellow"
+					>
+						BUY ME A COFFEE
+					</Link>
 				</section>
 			</section>
 		</main>
