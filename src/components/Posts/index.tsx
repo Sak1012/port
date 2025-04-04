@@ -25,6 +25,20 @@ export default function Home() {
           </section>
         </section>
       </section>
+      <section className="h-1/4 border-black border-2 rounded mt-2">
+        <section className="flex flex-row justify-between p-4">
+          <section className="flex w-1/2 flex-col font-helvetica">
+            <h1 className="text-lg font-helvetica">yep</h1>
+            <p className="text-sm font-helvetica">
+				Totally Forgot about this... ):
+            </p>
+          </section>
+          <section className="flex text-sm text-grey font-helvetica p-2">
+            {" "}
+            04 April 2025{" "}
+          </section>
+        </section>
+      </section>
     </main>
   );
 }
