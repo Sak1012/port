@@ -121,7 +121,7 @@ export default function Gsoc24() {
 							<p className="text-lg font-helvetica mt-4 text-justify">
 								Participating in GSoC and contributing to <a href="https://github.com/fossasia" className="underline">FOSSASIA</a> has been an incredibly rewarding experience. I thoroughly enjoyed working on various projects, collaborating with a talented community, and honing my skills in real-world applications. The challenges I faced were invaluable learning opportunities, and I am grateful for the chance to contribute to such impactful open-source initiatives. I look forward to continuing my journey with <a href="https://github.com/fossasia" className="underline">FOSSASIA</a> and making further contributions that can help enhance our projects and benefit the community.
 							</p>
-							<p className="text-sm text-grey mt-12">Srivatsav Auswin - 23 Nov 2024 - Chennai, India</p>
+							<p className="text-sm text-grey mt-12">Srivatsav Auswin - 24 Nov 2024 - Chennai, India</p>
 						</section>
 				</section>
 			</section>

@@ -41,6 +41,7 @@ export default function Home() {
 					</section>
 				</section>
 			</Link>
+			<Link href="blog/gsoc/25">
 			<section className="h-1/4 border-black border-2 rounded mt-2">
 				<section className="flex flex-row justify-between p-4">
 					<section className="flex w-1/2 flex-col font-helvetica">
@@ -51,10 +52,11 @@ export default function Home() {
 					</section>
 					<section className="flex text-sm text-grey font-helvetica p-2">
 						{" "}
-						24 Oct 2025{" "}
+						26 Oct 2025{" "}
 					</section>
 				</section>
 			</section>
+			</Link>
 		</main>
 	);
 }
