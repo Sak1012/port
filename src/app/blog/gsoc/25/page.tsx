@@ -268,7 +268,7 @@ export default function Gsoc25() {
 						</p>
 
 						<p className="pt-4 text-sm text-grey sm:text-base">
-							Srivatsav Auswin - 26 Oct 2024 - Chennai, India
+							Srivatsav Auswin - 26 Oct 2025 - Chennai, India
 						</p>
 					</div>
 				</section>
