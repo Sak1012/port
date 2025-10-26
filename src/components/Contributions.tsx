@@ -36,7 +36,6 @@ export default function Contributions({ prs }: ContributionsProps) {
             });
             if (!res.ok) throw new Error("GitHub fetch failed");
             const json = await res.json();
-			console.log(json);
 
             return {
               url,
@@ -54,7 +53,7 @@ export default function Contributions({ prs }: ContributionsProps) {
     }
 
     fetchPRDetails();
-  }, [prs]);
+  }, [prs, token]);
 
   if (!prData.length)
     return (
