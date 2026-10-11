@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Summer of Code 2025 with FOSSASIA</title>
+  </head>
+  <body>
+    <nav><a href="../gsoc.html">GSoC</a></nav>
+    <h1>Google Summer of Code 2025 with FOSSASIA</h1>
+    <p>
+      This document contains my contributions to
+      <a href="https://github.com/fossasia"> FOSSASIA </a> as part of GSoC 2025.
+    </p>
+    <h2>Abstract</h2>
+    <hr />
+    <p>
+      During Google Summer of Code 2025 with <b>FOSSASIA</b>, the focus was on
+      advancing the <b>Eventyay “enext”</b> architecture — a unified platform
+      that merges ticketing, talk management, and video functionalities into one
+      cohesive Django-based system. The work centered on consolidating models
+      from the three major components, establishing a consistent file structure,
+      and integrating essential plugins and modules. These efforts strengthened
+      the project’s modularity, simplified maintenance, and ensured smooth
+      interoperability across the platform’s core services.
+    </p>
+    <p>
+      Alongside backend unification, improvements were made to deployment
+      workflows, configuration management, and CI/CD automation through
+      Docker-based pipelines and optimized system setups. Collaborative reviews
+      and issue resolutions across repositories such as
+      <i>eventyay-tickets</i> and <i>eventyay-checkin</i> contributed to a more
+      stable, scalable, and production-ready environment. The overall outcome
+      was a cleaner and more robust architecture, bringing Eventyay closer to a
+      seamless, all-in-one event management solution for the open-source
+      community.
+    </p>
+    <h2>Projects and Contributions</h2>
+    <hr />
+    <a href="https://github.com/fossasia/eventyay-tickets"> Enext </a>
+    <p>
+      The <b>Enext</b> branch of <b>Eventyay-Tickets</b> represents the next
+      generation of the Eventyay backend — a unified Django-based architecture
+      that consolidates ticketing, talk management, and video modules into one
+      maintainable system. It replaces the earlier fragmented repositories with
+      a single, consistent framework where organizers can manage events,
+      sessions, and live participation through an integrated backend. The aim is
+      to create a modular, scalable codebase that simplifies development,
+      improves deployment consistency, and enables closer integration with the
+      Check-In and frontend applications. <br />
+      <br />
+      Work throughout GSoC 2025 focused on backend unification and structural
+      optimization. A key part of this effort was consolidating models from
+      <i>eventyay-talk</i> and <i>eventyay-video</i> into the tickets core,
+      ensuring migration compatibility and shared data flow. The legacy
+      <b>Item</b> model was refactored into <b>Product</b>, enabling smoother
+      video ticket integration and establishing a cleaner data structure. In
+      parallel, directory and module organization were standardized so that all
+      components — from models to views and templates — followed the same
+      hierarchy under the Enext layout. Multiple development branches were
+      merged, aligning older modules and ensuring that features from previous
+      versions remained functional in the unified setup. <br />
+      <br />
+      Extensive work was also done to refactor presale and organizer views for
+      improved flow and logical separation, update templates for visual and
+      functional consistency, and ensure that essential plugins such as
+      <b>badges</b>, <b>ticketoutput</b>, and global asset imports integrated
+      correctly into the new architecture. Multiple fixes were implemented to
+      resolve admin context rendering issues, align navigation elements, and
+      handle runtime errors that surfaced during the merging of codebases. These
+      changes formed the core of the Enext transformation — turning a collection
+      of loosely connected modules into a unified and stable system ready for
+      production use. <br />
+      <br />
+      Additional work focused on strengthening infrastructure and developer
+      workflows. This included unifying <b>Redis</b> and
+      <b>Celery</b> configurations for consistent background task handling,
+      adapting to the Docker-based PR workflow to automate testing and builds,
+      and cleaning up redundant configurations such as obsolete storage
+      variables and static map generation. <br />
+      <br />
+      Overall, these contributions helped transform Enext into a cohesive and
+      reliable backbone for the Eventyay ecosystem. By unifying the
+      architecture, refining its structure, and ensuring smooth plugin and
+      module integration, the project now serves as a single, scalable
+      foundation for all future Eventyay services — enabling faster development,
+      easier maintenance, and seamless interoperability across the entire
+      platform.
+    </p>
+    <h4>Contributions:</h4>
+    <ul>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/1106"
+          >PR #1106</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/1088"
+          >PR #1088</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/1075"
+          >PR #1075</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/1074"
+          >PR #1074</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/1047"
+          >PR #1047</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/1024"
+          >PR #1024</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/979"
+          >PR #979</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/974"
+          >PR #974</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/968"
+          >PR #968</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/966"
+          >PR #966</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/907"
+          >PR #907</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/899"
+          >PR #899</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/886"
+          >PR #886</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/885"
+          >PR #885</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/872"
+          >PR #872</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/867"
+          >PR #867</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/860"
+          >PR #860</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/858"
+          >PR #858</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/857"
+          >PR #857</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/848"
+          >PR #848</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/841"
+          >PR #841</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/825"
+          >PR #825</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/823"
+          >PR #823</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/815"
+          >PR #815</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/765"
+          >PR #765</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/759"
+          >PR #759</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/744"
+          >PR #744</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/742"
+          >PR #742</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/737"
+          >PR #737</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/726"
+          >PR #726</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/706"
+          >PR #706</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://github.com/fossasia/eventyay-tickets-exhibitors/pull/13"
+          >PR #13</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://github.com/fossasia/eventyay-tickets-exhibitors/pull/12"
+          >PR #12</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://github.com/fossasia/eventyay-tickets-exhibitors/pull/11"
+          >PR #11</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-checkin/pull/34"
+          >PR #34</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/608"
+          >PR #608</a
+        >
+      </li>
+    </ul>
+    <h4>Reviews:</h4>
+    <ul>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/1108"
+          >PR #1108</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/1105"
+          >PR #1105</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/1104"
+          >PR #1104</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/1086"
+          >PR #1086</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/1067"
+          >PR #1067</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/1066"
+          >PR #1066</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/1064"
+          >PR #1064</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/1063"
+          >PR #1063</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/1060"
+          >PR #1060</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/1056"
+          >PR #1056</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/1053"
+          >PR #1053</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/1045"
+          >PR #1045</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/1040"
+          >PR #1040</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/1038"
+          >PR #1038</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/1035"
+          >PR #1035</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/978"
+          >PR #978</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/961"
+          >PR #961</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/922"
+          >PR #922</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/903"
+          >PR #903</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/890"
+          >PR #890</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/889"
+          >PR #889</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/883"
+          >PR #883</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/882"
+          >PR #882</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/880"
+          >PR #880</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/868"
+          >PR #868</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/866"
+          >PR #866</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/836"
+          >PR #836</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/824"
+          >PR #824</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/818"
+          >PR #818</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/810"
+          >PR #810</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/762"
+          >PR #762</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-tickets/pull/761"
+          >PR #761</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/fossasia/eventyay-checkin/pull/37"
+          >PR #37</a
+        >
+      </li>
+    </ul>
+    <h2>Acknowledgements</h2>
+    <hr />
+    <p>
+      I would like to extend my heartfelt gratitude to my mentors
+      <a href="https://github.com/mariobehling"> Mario Behling </a> ,
+      <a href="https://github.com/norbusan"> Norbert Preining </a> ,
+      <a href="https://github.com/hongquan"> Hong Quan </a> and
+      <a href="https://github.com/rolandturner"> Roland Turner </a> for their
+      invaluable guidance and support throughout my GSoC experience. Their
+      expertise and encouragement helped me navigate the challenges of my
+      projects and inspired me to push my boundaries. I also sincerely
+      appreciate the flexibility they provided regarding project timelines and
+      goals, which made these contributions possible.
+    </p>
+    <h2>Final Note</h2>
+    <hr />
+    <p>
+      Taking part in Google Summer of Code with
+      <a href="https://github.com/fossasia"> FOSSASIA </a> has been a deeply
+      enriching and fulfilling experience. Collaborating with a vibrant
+      open-source community, contributing to a large-scale project, and working
+      through real-world technical challenges allowed for tremendous
+      professional and personal growth. Each task brought new insights into
+      building scalable systems and maintaining collaborative workflows in an
+      evolving codebase. I am grateful for the mentorship, teamwork, and
+      opportunities this program provided, and I look forward to continuing to
+      contribute to <a href="https://github.com/fossasia"> FOSSASIA </a> and its
+      mission of creating accessible, open technologies for everyone.
+    </p>
+    <p>Srivatsav Auswin - 26 Oct 2025 - Chennai, India</p>
+  </body>
+</html>
