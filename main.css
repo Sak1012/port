@@ -5,3 +5,11 @@ body {
   text-align: justify;
   background-color: #fffaf0;
 }
+
+div {
+  display: flex;	
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
